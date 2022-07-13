@@ -20,23 +20,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SPAM</title>
   </head>
-  <body>
-    <br /><br /><br /><br /><br />
+  <body style="background-color:aquamarine">
+    <br /><br /><br /><br />
     <div class="container">
       <center>
         <h1 class="mx-5">Detección de SPAM</h1>
-        <br />
+        <br /> <br /> <br />
 
         <form action="{{url_for('prediccion')}}" method="post">
-          <button type="submit" class="btn btn-info btn-block btn-large">Predecir</button>
+          <button type="submit" class="btn btn-info btn-block btn-large">Realizar Prediccion</button>
         </form>
         <br />
         
-        <ul>
-          <h6>No spam = 0         Spam = 1</h6>          
-        </ul>
         <h5>{{num_correos}}</h5>
         <h5>{{prediccion}}</h5>
+
+        <br /> <br />
+
+        <h5>{{grafica}}</h5>
       </center>
     </div>
   </body>
